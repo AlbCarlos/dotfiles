@@ -1,0 +1,49 @@
+[user]
+	email = er.carlos.albornoz@gmail.com
+	name = Carlos Albornoz
+[credential]
+	helper = store
+
+[core]
+  editor = nvim
+
+[color]
+  ui = always
+  branch = always
+  diff = always
+  interactive = always
+  status = always
+  grep = always
+  decorate = always
+  showbranch = always
+
+[push]
+  autoSetupRemote = true
+
+[alias]
+  a = add
+  aa = add --all
+  amend = commit --amend
+  b = branch
+  bb = branch -a
+  bd = branch -d
+  cm = commit -m
+  co = checkout
+  d = diff
+  ec = config --global -e
+  l = log --relative-date --graph --abbrev-commit -10
+  la = l --all
+  ll = log --relative-date --graph --abbrev-commit
+  lla = ll --all
+  p = push
+  remotes = remote -v
+  s = status -s
+  sd = d --cached
+  sh = show
+
+[format]
+  pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
+
+
+
+

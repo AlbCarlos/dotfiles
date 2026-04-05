@@ -1,0 +1,49 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin": "8 0 0 0",
+    "height": 40,
+    "width": 800,
+    "spacing": 6,
+    "modules-left": ["clock"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["pulseaudio", "network", "custom/powermenu"],
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "format": "{id}",
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    "clock": {
+        "format": "{:%a %d %b - %H:%M}",
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "<span font='Font Awesome 5 Free'></span>  {volume}%",
+        "format-muted": "<span font='Font Awesome 5 Free'></span> Muted",
+        "scroll-step": 2,
+        "on-click": "pavucontrol",
+        "tooltip": true
+    },
+    "network": {
+        "format": "{icon}",
+        "format-wifi": "<span font='Font Awesome 5 Free'></span> {essid} ({signalStrength}%)",
+        "format-ethernet": "<span font='Font Awesome 5 Free'></span> {ifname}",
+        "format-disconnected": "<span font='Font Awesome 5 Free'></span> Disconnected",
+        "tooltip": false
+    },
+    "custom/powermenu": {
+        "return-type": "json",
+        "exec": "~/.config/waybar/modules/powermenu.sh",
+        "format": "⏻",
+        "interval": 3600,
+        "escape": true,
+        "on-click": "~/.config/rofi/rofi-power.sh"
+    }
+}
