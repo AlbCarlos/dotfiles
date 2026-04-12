@@ -2,7 +2,7 @@
     border: none;
     border-radius: 0;
     font-family: "SF Pro Display", Cantarell, "Noto Sans", sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     min-height: 0;
 }
 
@@ -47,7 +47,7 @@ window#waybar > box {
 #clock {
     color: #c0caf5;
     padding: 0;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /* Workspaces */
@@ -113,5 +113,5 @@ window#waybar #workspaces button.focused {
 #custom-powermenu {
     color: #f7768e;
     padding: 0 2px 0 4px;
-    font-size: 40px;
+    font-size: 33px;
 }
