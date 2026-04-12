@@ -1,6 +1,7 @@
 [user]
 	email = er.carlos.albornoz@gmail.com
 	name = Carlos Albornoz
+	signingKey = E220FF67046E3144
 [credential]
 	helper = store
 
@@ -47,3 +48,7 @@
 
 
 
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
