@@ -3,10 +3,10 @@
     "position": "top",
     "margin": "8 0 0 0",
     "height": 40,
-    "width": 800,
+    "fixed-center": false,
     "spacing": 6,
-    "modules-left": ["clock"],
-    "modules-center": ["hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "network", "custom/powermenu"],
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -25,17 +25,17 @@
         "tooltip": false
     },
     "pulseaudio": {
-        "format": "<span font='Font Awesome 5 Free'></span>  {volume}%",
-        "format-muted": "<span font='Font Awesome 5 Free'></span> Muted",
+        "format": "<span font='Font Awesome 5 Free'></span>\u2003\u2003{volume}%",
+        "format-muted": "<span font='Font Awesome 5 Free'></span>\u2003\u2003Muted",
         "scroll-step": 2,
         "on-click": "pavucontrol",
         "tooltip": true
     },
     "network": {
         "format": "{icon}",
-        "format-wifi": "<span font='Font Awesome 5 Free'></span> {essid} ({signalStrength}%)",
-        "format-ethernet": "<span font='Font Awesome 5 Free'></span> {ifname}",
-        "format-disconnected": "<span font='Font Awesome 5 Free'></span> Disconnected",
+        "format-wifi": "<span font='Font Awesome 5 Free'></span>\u2003\u2003{essid} ({signalStrength}%)",
+        "format-ethernet": "<span font='Font Awesome 5 Free'></span>\u2003\u2003{ifname}",
+        "format-disconnected": "<span font='Font Awesome 5 Free'></span>\u2003\u2003Disconnected",
         "tooltip": false
     },
     "custom/powermenu": {
