@@ -1,7 +1,16 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# JAVA and Android Studio
 export ZSH="$HOME/.oh-my-zsh"
+export JAVA_HOME=/opt/android-studio/jbr
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"
+
+# Android Emulator Wayland bypass
+export QT_QPA_PLATFORM=xcb
 
 # GPG passphrase caching configuration
 export GPG_TTY=$(tty)
