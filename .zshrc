@@ -63,3 +63,5 @@ autoload -Uz _zi
 (( ${+_comps} )) && _comps[zi]=_zi
 # examples here -> https://wiki.zshell.dev/ecosystem/category/-annexes
 zicompinit # <- https://wiki.zshell.dev/docs/guides/commands
+
+export GTK_USE_PORTAL=1
