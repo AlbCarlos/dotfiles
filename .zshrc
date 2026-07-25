@@ -65,3 +65,5 @@ autoload -Uz _zi
 zicompinit # <- https://wiki.zshell.dev/docs/guides/commands
 
 export GTK_USE_PORTAL=1
+
+export PATH="$PATH:/home/callisto/.local/bin"
